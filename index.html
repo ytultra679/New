@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ChaseStyle Store</title>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">ChaseStyle</div>
+      <div class="tag">Trending finds • Fast delivery</div>
+    </div>
+    <div class="actions">
+      <a class="phone" href="tel:+923001234567">+92 300 1234567</a>
+      <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-left">
+      <h1>Mega Sale — Up to 40% Off</h1>
+      <p>Hot picks for this week. Cash on Delivery available.</p>
+      <div class="chips">
+        <button class="chip" data-cat="All">All</button>
+        <button class="chip" data-cat="Electronics">Electronics</button>
+        <button class="chip" data-cat="Accessories">Accessories</button>
+        <button class="chip" data-cat="Lifestyle">Lifestyle</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1200&auto=format&fit=crop" alt="hero">
+    </div>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <input id="search" placeholder="Search products (earbuds, watch, light...)" />
+    <select id="sort">
+      <option value="popular">Sort: Popular</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+    </select>
+  </div>
+</section>
+
+<section class="products container" id="productsGrid">
+  <!-- Products inserted by JS -->
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <strong>ChaseStyle</strong>
+      <div>Trending finds. Fast delivery in Pakistan.</div>
+    </div>
+    <div>
+      <div>Contact</div>
+      <div>Phone: <a href="tel:+923001234567">+92 300 1234567</a></div>
+      <div>WhatsApp: <a href="https://wa.me/923001234567" target="_blank">+92 300 1234567</a></div>
+    </div>
+    <div>
+      <div>Follow Us</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="cart-modal" aria-hidden="true">
+  <div class="cart-panel">
+    <button id="closeCart" class="close-btn">✕</button>
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <div>Subtotal: <span id="subtotal">PKR 0</span></div>
+      <a id="checkoutBtn" class="wa-btn" target="_blank">Checkout on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
